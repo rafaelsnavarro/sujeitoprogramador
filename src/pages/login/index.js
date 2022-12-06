@@ -1,7 +1,24 @@
+import './login.css'
+import { Logo } from '../../components/Logo'
+
 export default function Login(){
     return(
-        <div>
-            <h1>Página de Login</h1>
+        <div className="login-container">
+            <Logo/>
+            <form className="form">
+                <input
+                type="email"
+                placeholder="Digite seu email..."
+                />
+            
+            <input
+            type="password"
+            placeholder="********"
+            autoComplete="on"
+            />
+
+            <button type="submit">Acessar</button>
+            </form>
         </div>
     )
 }
